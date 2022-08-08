@@ -1,0 +1,195 @@
+<! DOCTYPE html>   
+<html>   
+<head>   
+<title>  
+JQuery validation example 2  
+</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body {  
+  background: #191828;  
+  color: #efedef;  
+  font-family: "Roboto", Arial, Helvetica, sans-serif;  
+  font-size: 16px;  
+  font-weight: 300;  
+  letter-spacing: 0.01em;  
+  line-height: 1.6em;  
+  margin: 0;  
+  padding: 80px;   
+  }  
+h4 {  
+  font-weight: bold;  
+  margin-bottom: 2.5rem;  
+ font-family: 'Lato';  
+  align: center;  
+  font-size: 1rem;  
+  margin-top: 10px;  
+}  
+form  {  
+  margin-top: 20px;  
+  margin-left: 100px;  
+  }  
+p  {  
+  margin-top: 20px;  
+  margin-left: 100px;  
+  }  
+p.note {  
+  font-size: 1rem;  
+  color: red;  
+}  
+  
+input {  
+  border-radius: 5px;  
+  border: 1px solid #ccc;  
+  padding: 4px;  
+  font-family: 'Lato';  
+  width: 300px;  
+  margin-top: 10px;  
+}  
+  
+label {  
+  width: 300px;  
+  font-weight: bold;  
+  display: inline-block;  
+  margin-top: 20px;  
+}  
+  
+label span {  
+  font-size: 1rem;  
+}  
+  
+label.error {  
+    color: red;  
+    font-size: 1rem;  
+    display: block;  
+    margin-top: 5px;  
+}  
+  
+input.error  {  
+    border: 1px dashed red;  
+    font-weight: 300;  
+    color: red;  
+}  
+  
+ [type="reset"],  html [type="button"] {  
+    margin-left: 0;  
+    border-radius: 0;  
+    background: black;  
+    color: white;  
+    border: none;  
+    font-weight: 300;  
+    padding: 10px 0;  
+    line-height: 1;  
+}  
+button {  
+margin-left: 0;  
+    border-radius: 0;  
+    background: black;  
+    color: white;  
+    border: none;  
+    font-weight: 300;  
+    padding: 10px 0;  
+    line-height: 1;  
+}  
+[type="submit"] {  
+    display: inline-block;  
+    padding: 0.35em 1.2em;  
+    border: 0.1em solid #3494e6;  
+    margin: 0 0.3em 0.3em 0;  
+    border-radius: 0.12em;  
+    box-sizing: border-box;  
+    text-decoration: none;  
+    font-family: 'Roboto',sans-serif;  
+    font-size: 1rem;  
+    text-align: center;  
+    transition: all 0.2s;  
+    }  
+[type="submit"]:hover {  
+    color: #FFFFFF;  
+    background-color: #3494e6;  
+}  
+</style>  
+<!-- Latest compiled and minified CSS -->  
+    <link rel="stylesheet" href=   
+    "https://maxcdn.bootstrapcdn.com/bootstrap/   
+    4.0.0/css/bootstrap.min.css">   
+    <!-- jQuery library -->  
+<script src=   
+    "https://ajax.googleapis.com/ajax/libs/   
+    jquery/3.3.1/jquery.min.js">   
+    </script>   
+    <!-- Popper JS -->  
+    <script src=   
+    "https://cdnjs.cloudflare.com/ajax/libs/   
+    popper.js/1.12.9/umd/popper.min.js">   
+    </script>   
+    <!-- Latest compiled JavaScript -->  
+    <script src=   
+    "https://maxcdn.bootstrapcdn.com/bootstrap/   
+    4.0.0/js/bootstrap.min.js">   
+    </script>   
+</head>   
+<body>  
+<br>   
+    <h1 class="text-center text-success">   
+    FORM VALIDATION USING JQUERY   
+    </h1>    
+<div class="container">   
+    <div class="col-lg-8   
+        m-auto d-block">   
+        <form>   
+        <div class="form-group">   
+            <label for ="user">   
+                Enter username:   
+            </label>   
+            <input type="text"  
+                    name="username" id="usernames"  
+                    class="form-control">   
+            <h5 id="usercheck" style="color: red;" >   
+                    **Username is missing   
+            </h5>   
+        </div>   
+<div class="form-group">   
+            <label for="user">   
+                    Enter Email:   
+            </label>   
+            <input type="email" name="email"  
+                id="email" required   
+                class="form-control">   
+            <small id="emailvalid" class="form-text   
+                text-muted invalid-feedback">   
+                    Your email must be a valid email   
+            </small>   
+        </div>   
+  
+        <div class="form-group">   
+            <label for="password">   
+                    Enter Password:   
+            </label>   
+            <input type="password" name="pass"  
+                id="password" class="form-control">   
+            <h5 id="passcheck" style="color: red;">   
+                **Please Fill the password   
+            </h5>   
+        </div>   
+  
+        <div class="form-group">   
+            <label for="conpassword">   
+                    Confirm Password:   
+            </label>   
+            <input type="password" name="username"  
+                    id="conpassword" class="form-control">   
+            <h5 id="conpasscheck" style="color: red;">   
+                **Password didn't match   
+            </h5>   
+        </div>   
+  
+        <input type="submit" id="submitbtn"  
+            value ="Submit" class="btn btn-primary" >   
+        </form>   
+    </div>   
+    </div>      
+<!-- Including app.js jQuery Script -->  
+    <script src="app.js"></script>   
+</body>   
+</html>

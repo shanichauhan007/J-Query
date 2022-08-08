@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vanila js</title>
+    <style type="text/css">
+        body{background-color: brown;}
+        div{
+            height:400px ;
+            width: 400px;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function internalAlert(){
+            alert("Hello Student!!!!");
+        }------
+        function internalAlert(){
+            if(confirm("Are You Sure????"))
+            {
+                alert("Yesssssss");
+            }
+            else
+            {
+                alert("Noooo");
+            }
+        }
+        function internalPrompt(){
+            var fname=prompt("Enter Your Firstname");
+            var lname=prompt("Enter Your Lastname");
+            
+        }
+    </script>
+</head>
+<body>
+  <center> <div> Silver Oak University</div></center>
+   <hr>
+   <center><input type="button" value="alert Inline" onclick="alert('this is wrong')">
+   <input type="button" value="confirm Inline" onclick="confirm('Are You Sure?????')"> 
+   <input type="button" value="prompt Inline" onclick="prompt('Enter Your Name')"></center>
+   
+   <hr>
+    <center><input type="button" value="alert Intetnal" onclick=internalAlert()>
+   <input type="button" value="confirm Internal" onclick=internalConfirm()> 
+   <input type="button" value="prompt Internal" onclick=internalPrompt()></center>
+  
+  
+</body>
+</html>
